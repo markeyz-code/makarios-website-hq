@@ -407,7 +407,7 @@ const playVideo = () => {
 
 const openGallery = (index: number) => {
   currentGalleryIndex.value = index
-  console.log(`Opening gallery at index ${index}`)
+
 }
 
 // Lifecycle

@@ -119,7 +119,7 @@
     };
     
     const handleInvestmentCalculation = (result: any) => {
-      console.log('Investment calculation result:', result);
+
     };
     
     // Auto-advance slides

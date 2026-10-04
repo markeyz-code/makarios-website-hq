@@ -378,7 +378,7 @@ Sent from MAKARIOS Initiative website
     form.value.privacyPolicy = false;
     
   } catch (error) {
-    console.error('Error opening WhatsApp:', error);
+
     showToast({
       title: "Error",
       message: 'Unable to open WhatsApp. Please try again.',

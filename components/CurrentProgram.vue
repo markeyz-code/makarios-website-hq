@@ -114,18 +114,18 @@
   const videoPlayer = ref<HTMLVideoElement>()
   
   const onVideoLoad = () => {
-    console.log('Video is loading...')
+
   }
   
   const onVideoError = () => {
-    console.log('Video failed to load')
+
   }
   
   onMounted(() => {
     // Ensure video plays automatically when component mounts
     if (videoPlayer.value) {
       videoPlayer.value.play().catch(err => {
-        console.log('Autoplay prevented:', err)
+
       })
     }
   })

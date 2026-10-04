@@ -11,7 +11,7 @@ export const useAdverts = () => {
             const res = await adverts_api.getPublicAdverts()
             groupedAdverts.value = res.data?.data || res.data || {}
         } catch (err) {
-            console.error('Failed to load adverts', err)
+
         } finally {
             loading.value = false
         }
@@ -20,7 +20,7 @@ export const useAdverts = () => {
     const trackClick = async (id: string, url: string) => {
         try {
             // Fire and forget
-            adverts_api.trackClick(id).catch(console.error)
+            adverts_api.trackClick(id).catch(() => {})
         } finally {
             if (url) window.open(url, '_blank')
         }

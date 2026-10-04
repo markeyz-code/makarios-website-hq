@@ -12,7 +12,7 @@ export const useCms = () => {
             cmsConfig.value = res.data
             return res.data
         } catch (err) {
-            console.error('Failed to fetch CMS config:', err)
+
         } finally {
             loading.value = false
         }

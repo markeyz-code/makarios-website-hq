@@ -119,7 +119,7 @@ const openTestimonial = async () => {
   document.body.style.overflow = 'hidden'
   await nextTick()
   if (testimonialModalVideo.value) {
-    testimonialModalVideo.value.play().catch(e => console.log('Autoplay prevented', e))
+    testimonialModalVideo.value.play().catch(e => {})
   }
 }
 

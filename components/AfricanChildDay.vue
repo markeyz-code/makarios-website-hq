@@ -341,7 +341,7 @@ const playVideo = async (el: HTMLVideoElement | null, muted = true) => {
   try {
     await el.play()
   } catch (err) {
-    console.warn('Autoplay prevented:', err)
+
   }
 }
 

@@ -11,7 +11,7 @@ export const useGetExcos = () => {
             const res = await excos_api.getAll() as any
             excos.value = res.data || res
         } catch (err: any) {
-            console.error("Failed to fetch excos", err)
+
         } finally {
             loading.value = false
         }

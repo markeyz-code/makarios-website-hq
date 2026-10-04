@@ -11,7 +11,7 @@ export const useGallery = () => {
       const res = await GATEWAY_ENDPOINT.get('/gallery/public')
       items.value = res.data
     } catch (error) {
-      console.error('Failed to fetch public gallery', error)
+
     } finally {
       loading.value = false
     }

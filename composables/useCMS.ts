@@ -23,7 +23,7 @@ export const useCMS = () => {
       cmsConfig.value = res.data
       return res.data
     } catch (error) {
-      console.error('Failed to load CMS:', error)
+
       return null
     } finally {
       loading.value = false

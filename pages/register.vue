@@ -467,7 +467,7 @@ useSeoMeta({
       showSuccessModal.value = true
       startCountdown()
     } catch (error) {
-      // console.error('Registration failed:', error)
+
     } finally {
       isSubmitting.value = false
     }

@@ -11,7 +11,7 @@ export const useSponsors = () => {
             const res = await sponsors_api.getPublicSponsors()
             sponsors.value = res.data?.data || res.data || []
         } catch (err) {
-            console.error('Failed to load sponsors', err)
+
         } finally {
             loading.value = false
         }
